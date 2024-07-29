@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='images/profile-bg.jpg') }}');background-size: cover; color: #fff;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>关于作者</h1>
+            <span class="subheading">帅气、幽默、自信、开朗、乐观</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h2>基本信息</h2>
+        <p>姓名：任俊杰</p>
+        <p>年龄：21岁</p>
+        <p>邮箱：3430246557@qq.com</p>
+        <h2>账号设置</h2>
+        <p>用户名：任俊杰123</p>
+        <p>密码：<a href="{{url_for('change_password')}}" class="btn btn-primary">修改密码</a></p>
+        <h2>偏好设置</h2>
+        <p>通知设置：<input type="checkbox" checked> 接收通知</p>
+        <p>主题设置：
+          <select>
+            <option value="dark">深色</option>
+            <option value="light">浅色</option>
+          </select>
+        </p>
+        <a href="{{url_for('dashboard')}}" class="btn btn-primary">转到控制台</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}

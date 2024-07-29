@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='images/about-bg.jpg') }}')">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>代码 客栈</h1>
+              <span class="subheading">乔布斯说:“我觉得每个人都应该学习一门编程语言,学习编程教你如何思考。”</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p><strong>代码 客栈</strong> 是一个基于Flask的个人博客网站，主要用于记录个人的学习笔记和心得体会。</p>
+            <p><strong>本站使用的技术栈包括：</strong></p>
+          <ul>
+            <li><strong>Python:</strong> Python 是一种易学易用的高级编程语言，广泛应用于Web开发、数据分析和人工智能领域。</li>
+            <li><strong>JavaScript:</strong> JavaScript 是一种用于网页开发的脚本语言，可以为网页增加动态效果和交互功能。</li>
+            <li><strong>HTML/CSS:</strong> HTML 是用于构建网页结构的标记语言，而 CSS 则用于设计和样式化网页。</li>
+              <li><strong>SQLAlchemy:</strong> SQLAlchemy 是一个 Python 的对象关系映射（ORM）库，用于操作数据库。</li>
+            <li><strong>Flask:</strong> Flask 是一个轻量级的 Python Web 框架，可以用于构建各种类型的 Web 应用程序。</li>
+              <li><strong>Bootstrap:</strong> Bootstrap 是一个用于构建响应式网站的前端框架，可以用于设计和样式化网页。</li>
+              <li><strong>Markdown:</strong> Markdown 是一种轻量级的标记语言，用于书写格式化文本。</li>
+          </ul>
+            <p>本站的源代码可以在 <a href="https://github.com/jianjun2014/note8">GitHub</a> 上找到。</p>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
